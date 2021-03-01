@@ -7,7 +7,7 @@ public class SetMismatch {
 
 	public static void main(String[] args) {
 		int[]  nums = {1,2,2,4};
-		int[] nums2 = {2,2};
+		int[] nums2 = {3,2,2};
 		int[] answer = findErrorNums(nums2);
 		System.out.println(Arrays.toString(answer));
 		
