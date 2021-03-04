@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -10,8 +9,6 @@ public class SetMismatch {
 		int[] nums2 = {3,2,2};
 		int[] answer = findErrorNums(nums2);
 		System.out.println(Arrays.toString(answer));
-		
-
 	}
 	
 	public static int[] findErrorNums(int[] nums) {
