@@ -14,9 +14,10 @@ public class UncommonWords {
 	
 	public static String[] uncommon(String A, String B) {
 		HashMap<String,Integer> map = new HashMap<>();
-		String[] a = A.split(" ");
+		String[] a = A.split(" "); // created array based on spaces
 		String[] b = B.split(" ");
 		
+		// traversing through A array and mapping values and key
 		for(int i = 0; i < a.length; i++) {
 			if(!map.containsKey(a[i])) {
 				map.put(a[i], 1);
@@ -26,6 +27,7 @@ public class UncommonWords {
 			}
 		}
 		
+		// traversing through B array and mapping values and key
 		for(int i = 0; i < b.length; i++) {
 			if(!map.containsKey(b[i])) {
 				map.put(b[i], 1);
@@ -35,9 +37,7 @@ public class UncommonWords {
 			}
 		}
 	
-		
 		int count = 0;
-		
 		// getting the size for the array
 		for(String s: map.keySet()) {
 			if(map.get(s) == 1) {
