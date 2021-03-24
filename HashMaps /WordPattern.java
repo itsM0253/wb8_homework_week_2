@@ -17,7 +17,7 @@ public class WordPattern {
 		}
 		HashMap<Character,String> map = new HashMap<>();
 		for(int i = 0; i < pattern.length(); i++) { // traversing through the pattern
-			char current_char = pattern.charAt(i); // grabbed a character
+			char current_char = pattern.charAt(i); // grabbed a character from the pattern
 			if(map.containsKey(current_char)) {
 				if(!map.get(current_char).equals(words[i])) {
 					return false;
